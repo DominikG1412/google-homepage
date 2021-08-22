@@ -1,12 +1,14 @@
 html, body{
     font-family: 'Liberation Sans';
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
+    positioN: relative;
+    margin: 0;
 }
 
 .navbar1{
-    background-color: aqua;
     width: 50%;
     height: 60px;
     position: fixed;
@@ -16,7 +18,6 @@ html, body{
 }
 
 .navbar2{
-    background-color: red;
     width: 50%;
     height: 60px;
     margin-left: 50%;
@@ -59,6 +60,7 @@ html, body{
 #navlink1{
     height: 70%;
     width: auto;
+    margin-left: 15px;
     justify-content: start;
     align-items: center;
 }
@@ -68,6 +70,7 @@ html, body{
     width: auto;
     justify-content: start;
     align-items: center;
+    margin-right: 50px;
 }
 
 #navlink3{
@@ -101,7 +104,7 @@ svg{
 }
 
 #navlink5:hover{
-    background-color: rgb(240, 228, 228);
+    background-color: rgb(241, 241, 241);
     border-radius: 100%;
 }
 
@@ -157,7 +160,6 @@ font-size: 0.8rem;
 }
 
 #logo{
-    background-color: lime;
     width: 100%;
     height: 25%;
     min-height: 180px;
@@ -167,13 +169,153 @@ font-size: 0.8rem;
     align-items: end;
 }
 
-#searchbar{
-    background-color: mediumseagreen;
+.searchsection{
     width: 100%;
-    height: 8%;
+    height: 18%;
     min-height: 100px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+#searchdiv{
+    width: 25%;
+    min-width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+}
+
+#searchdiv:hover{
+    width: 25.1%;
+    min-width: 400px;
+    height: 41px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    box-shadow: 0.5px 0.5px 0.4em rgb(192, 192, 192);
+}
+
+#searchdiv:checked{
+    width: 25.1%;
+    min-width: 400px;
+    height: 40.1%;
+    border-radius: 20px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    box-shadow: 0.5px 0.5px 0.4em rgb(192, 192, 192);
+}
+
+
+#searchicon{
+    height: 50%;
+    margin-left: 10px;
+}
+
+#searchbar{
+    width: 89%;
+    height: 80%;
+    border: none;
+}
+
+#searchbar:focus{
+    outline: none;
+}
+
+.buttonsection{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttonclass{
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 4px;
+    border-style: none;
+    margin-bottom: 50px;
+    color: rgb(53, 53, 53);
+    font-size: 0.8rem;
+}
+
+#button1:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+}
+
+
+.footersection1{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 40px;
+    background-color: rgb(241, 241, 241);
+    border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(88, 88, 88);
+    font-size: 0.8rem;
+    color: rgb(53, 53, 53);
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.footersection2{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    background-color:rgb(241, 241, 241);
+    font-size: 0.8rem;
+    color: rgb(241, 241, 241);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerlinks{
+    font-size: 0.8rem;
+    color: rgb(53, 53, 53);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footerlinks:hover{
+    text-decoration: underline;
+}
+
+#footerlink4pic{
+    height: 10px;
+    width: 10px;
+    margin-right: 3px;
+}
+
+#footerlink4{
+    margin: 0 30px 0 30px;
+}
